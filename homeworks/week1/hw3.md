@@ -18,5 +18,9 @@
 pwd: print working directory, 輸入後電腦就會告訴你目前的工作目錄
 ls: list segment, 可以看見目前工作目錄的所有檔案
 touch index.html(這是檔案名稱) : 建立index.html這個檔案, 如果已經存在了就更新建立時間
+cd : change directory, 意思是從現在所在位置移動到指定資料夾，可以用剛才說的pwd先確認目前的位置後再移動，例如 cd user 就是移動到user這個資料夾，而cd .. 就是移動到上層的資料夾
+mkdir : 在目前的位置中新增一個資料夾，例如mkdir newfolder
+
+所以如果想達到h0w哥的需求，只要先輸入mkdir wifi就可以在目前資料夾中創造一個名為wifi的新資料夾，然後cd wifi移動到裡面，再輸入　touch afu.js就可以順利建立afu.js這個檔案囉
 
 大概4這樣
