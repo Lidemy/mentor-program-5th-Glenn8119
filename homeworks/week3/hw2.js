@@ -17,19 +17,17 @@ function solve(lines) {
   const start = Number(lines[0].split(' ')[0])
   const end = Number(lines[0].split(' ')[1])
 
-  for (let i = start; i <= Number(end); i++) {
-    if (isWater(i)) {
-      console.log(i)
-    }
+  for (let i = start; i <= end; i++) {
+    if (isValid(i)) console.log(i)
   }
 
-  function isWater(n) {
+  function isValid(n) {
     const arr = String(n).split('')
 
     let sum = 0
     for (let i = 0; i < arr.length; i++) {
       sum += Math.pow(Number(arr[i]), arr.length)
     }
-    return Number(n) === sum
+    return n === sum
   }
 }
